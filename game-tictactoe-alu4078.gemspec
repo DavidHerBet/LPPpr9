@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "game-tictactoe-alu4078/version"
+require "game_tictactoe_alu4078/version"
 
 Gem::Specification.new do |s|
   s.name        = "game-tictactoe-alu4078"
@@ -20,5 +20,7 @@ Gem::Specification.new do |s|
 
   # specify any dependencies here; for example:
   # s.add_development_dependency "rspec"
+  s.add_development_dependency 'rspec', '~> 2.7'
+  s.add_dependency 'rails'
   # s.add_runtime_dependency "rest-client"
 end
