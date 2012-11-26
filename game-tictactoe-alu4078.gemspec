@@ -4,12 +4,12 @@ require "game_tictactoe_alu4078/version"
 
 Gem::Specification.new do |s|
   s.name        = "game-tictactoe-alu4078"
-  s.version     = Game::Tictactoe::Alu4078::VERSION
+  s.version     = TicTacToe::VERSION
   s.authors     = ["David Hernández Bethencourt"]
   s.email       = ["alu0100536881@ull.edu.es"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.homepage    = "https://github.com/DavidHerBet/LPPpr10.git"
+  s.summary     = %q{Gem which implements tictactoe game}
+  s.description = %q{Gem which implements tictactoe game}
 
   s.rubyforge_project = "game-tictactoe-alu4078"
 
@@ -20,7 +20,8 @@ Gem::Specification.new do |s|
 
   # specify any dependencies here; for example:
   # s.add_development_dependency "rspec"
-  s.add_development_dependency 'rspec', '~> 2.7'
-  s.add_dependency 'rails'
+  s.add_development_dependency 'rake'
+  s.add_development_dependency 'rspec'
+  s.add_development_dependency 'guard-rspec'
   # s.add_runtime_dependency "rest-client"
 end

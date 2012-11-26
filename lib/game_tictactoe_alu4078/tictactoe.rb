@@ -1,11 +1,6 @@
-#!/usr/bin/env ruby
 #---
 # Visit http://www.pragmaticprogrammer.com/titles/fr_quiz for more book information.
 #---
-
-require "humanplayer"
-require "dumbplayer"
-require "smartplayer"
 
 module TicTacToe
   module SquaresContainer
@@ -107,23 +102,6 @@ EOS
       BOARD.gsub(/(\d)(?= \|)/) { |i| @squares[i.to_i] }
     end
 
-  end
-end
-
-module TicTacToe
-  class Player
-    def initialize( mark )
-      @mark = mark # "X" or "O" or " "
-    end
-    
-    attr_reader :mark
-    
-    def move( board )
-      raise NotImplementedError, "Player subclasses must define move()."
-    end
-    
-    def finish( final_board )  
-    end
   end
 end
 

@@ -1,5 +1,7 @@
 # humanplayer.rb
 
+require "game_tictactoe_alu4078/player"
+
 module TicTacToe
   class HumanPlayer < Player
     def move( board )

@@ -1,7 +1,3 @@
-module Game
-  module Tictactoe
-    module Alu4078
+module TicTacToe
       VERSION = "0.0.1"
-    end
-  end
 end
